@@ -1,1 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+#carGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+#thumbs img {
+  max-width: 200px;
+  max-height: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 0.5rem;
+}
+
+#big {
+  height: 633.6px;
+  width: 633.6px;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  #carGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
